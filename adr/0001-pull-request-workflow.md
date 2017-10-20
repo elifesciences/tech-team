@@ -8,7 +8,7 @@ Accepted
 
 ## Context
 
-Software is build incrementally as an accumulation of changes.
+Software is built incrementally as an accumulation of changes.
 
 Pull requests allow:
 
