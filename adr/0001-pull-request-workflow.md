@@ -26,4 +26,4 @@ Team members can be asked to review a pull request through Github.
 
 Automated tests should run on pull requests, to provide automated feedback.
 
-Committing directly to a mainline branch (`develop` or `master`) should not be frequent.
+Committing directly to a mainline branch (`develop` or `master`) should not be frequent, but only done when necessary (e.g. infrastructure changes such as `builder-private`).
