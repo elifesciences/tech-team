@@ -26,4 +26,6 @@ We will use existing Docker containers to deploy tools that require building fro
 
 We should not see too many runtimes being supported in builder-base-formula.
 
-We should not allocate time to resolve versioning or building issues for languages such as Go or Ruby.
+We should not allocate time to resolve versioning or building issues for languages such as Go or Ruby, but reuse existing container.
+
+We should tag the container images we use and push them onto [https://hub.docker.com/u/elifealfreduser/] for reproducibility.
