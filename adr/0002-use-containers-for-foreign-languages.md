@@ -20,7 +20,7 @@ Some tools written in Java instead have a very stable runtime platform (ElasticS
 
 ## Decision
 
-We will use Docker containers to deploy tools that require building from source in a foreign language, in testing or production environments.
+We will use existing Docker containers to deploy tools that require building from source in a foreign language, in testing or production environments.
 
 ## Consequences
 
