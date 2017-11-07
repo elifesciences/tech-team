@@ -16,7 +16,7 @@ There are also tools that were originally written in another language but are be
 
 These tools are usually distributed as source code. The operational overhead of writing formulas for the environment to build them is a form of waste.
 
-Some tools written in Java instead have a very stable runtime platform (Selenium, ElasticSearch, even Jenkins), as they are distributed as binaries.
+Some tools written in Java instead have a very stable runtime platform (ElasticSearch, even Jenkins), as they are distributed as binaries.
 
 ## Decision
 
