@@ -1,5 +1,9 @@
 # AWS RDS permissions
 
+## Status
+
+Accepted
+
 ## Context
 
 AWS RDS are managed database servers.
@@ -30,15 +34,14 @@ Re-instating permissions in a PostgreSQL database is an involved process.
 
 ## Decision
 
-The RDS *root* user provisioned shall always be the 'owner' of the application database.
+The RDS *root* user provisioned shall always be the `owner` of the application database.
 
 The RDS *application* user will have enough permissions to read and write to the application database.
 
-The RDS *application* user will not have permission to drop/re-create the application database *in prod and end2end environments*.
+The RDS *application* user will not have permission to drop/re-create the application database *in continuumtest, end2end and prod environments*.
 
 ## Consequences
 
 Applications that depend on creating or destroying their database will fail with permission errors.
 
-We have confidence backups and restores of the database by the root user will happen without error.
-
+Backups and restore can be done purely by using the root user and without the application's knowledge.
