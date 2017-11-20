@@ -12,7 +12,7 @@ eLife has numerous projects written completely and partly with the [Python progr
 
 In order to provide language version consistency across projects we need to get a consensus on which versions we are going to support. 
 
-## Descision
+## Decision
 
 We will use Python 2.7.14 as our default version for any project that solely uses or supports Python 2.
 
