@@ -14,7 +14,10 @@ In order to provide language version consistency across projects we need to get 
 
 There are exceptions such as `crm` not supporting PHP 7 and being stuck on 5.6.
 
-Staying up to date with the major and minor versions of PHP is important to be able to use new features and libraries, and to keep working on a version that receives bug fixes and security updates.
+Staying up to date with the major and minor versions of PHP is important:
+
+- to be able to use new features and libraries (nice to have)
+- to keep working on a version that receives bug fixes and security updates (must have)
 
 All infrastructure is currently based on:
 
