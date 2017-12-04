@@ -33,8 +33,6 @@ We will use PHP 7.0 on all existing and new PHP projects bar exceptions that do 
 
 We will upgrade to PHP 7.1, PHP 7.2 and similar minor versions as a concerted effort on all libraries and projects, before the end of the security support.
 
-We will start requiring PHP 7.1/7.2 in composer.json...when?
-
 ## Consequences
 
 No libraries or projects should require PHP >= 7.1 until infrastructure provides it by switching the packages versions.
