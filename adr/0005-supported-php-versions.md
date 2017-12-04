@@ -12,7 +12,7 @@ eLife has several microservices (and larger projects) written in PHP.
 
 In order to provide language version consistency across projects we need to get a consensus on which versions we are going to support. 
 
-There are exceptions such as `crm` not supporting PHP 7 and being stuck on 5.6.
+There is an exception, `crm` not being upgraded on PHP 7 (using 5.6 instead) but supporting it.
 
 Staying up to date with the major and minor versions of PHP is important:
 
@@ -29,7 +29,7 @@ PHP 7.0 has ceased active support, but has [security support](http://php.net/sup
 
 ## Decision
 
-We will use PHP 7.0 on all existing and new PHP projects bar exceptions that do not support it (`crm`).
+We will use PHP 7.0 on all existing and new PHP projects bar exceptions that do not support it (`crm` if needed).
 
 We will upgrade to PHP 7.1, PHP 7.2 and similar minor versions as a concerted effort on all libraries and projects, before the end of the security support.
 
