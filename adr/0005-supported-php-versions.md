@@ -16,7 +16,11 @@ There are exceptions such as `crm` not supporting PHP 7 and being stuck on 5.6.
 
 Staying up to date with the major and minor versions of PHP is important to be able to use new features and libraries, and to keep working on a version that receives bug fixes and security updates.
 
-All infrastructure is currently based on Ubuntu 14.04/16.04 and a popular [PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php) providing the PHP interpreter and its extensions. The PPA supports 7.0, 7.1, and 7.2.
+All infrastructure is currently based on:
+
+- Ubuntu 14.04 (doesn't have PHP 7.x by default)
+- Ubuntu 16.04 (does have PHP 7.0 by default)
+- a popular [PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php) filling in the blanks, supporting 7.0, 7.1, and 7.2.
 
 PHP 7.0 has ceased active support, but has [security support](http://php.net/supported-versions.php) until 2018-12-03.
 
