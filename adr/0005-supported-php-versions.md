@@ -24,6 +24,7 @@ All infrastructure is currently based on:
 - Ubuntu 14.04 (doesn't have PHP 7.x by default)
 - Ubuntu 16.04 (does have PHP 7.0 by default)
 - a popular [PPA](https://launchpad.net/~ondrej/+archive/ubuntu/php) filling in the blanks, supporting 7.0, 7.1, and 7.2.
+- official [PHP Docker images](https://hub.docker.com/_/php/) supporting 5.6, 7.0, 7.1, and 7.2.
 
 PHP 7.0 has ceased active support, but has [security support](http://php.net/supported-versions.php) until 2018-12-03.
 
@@ -35,6 +36,9 @@ We will upgrade to PHP 7.1, PHP 7.2 and similar minor versions as a concerted ef
 
 ## Consequences
 
-No libraries or projects should require PHP >= 7.1 until infrastructure provides it by switching the packages versions.
+No libraries or projects should require PHP >= 7.1 until it is provided by:
+
+- an approved builder-base-formula state such as `elife/php71.sls`, if the project is using EC2 instances anywhere
+- a base image such as `elife/php:7.1` derived from the official ones, if the project is using containers anywhere
 
 A single epic should capture all the necessary upgrades when we decide to do the switch to a new minor version.
