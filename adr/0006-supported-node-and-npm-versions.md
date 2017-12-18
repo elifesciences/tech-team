@@ -23,21 +23,19 @@ Staying up to date with the major and minor versions of Node is important:
 
 ## Decision
 
-To use the latest Long Term Support (LTS) version.
+To use the latest Long Term Support (LTS) line (currently 8.x).
 
-The 8.x is the current Node LTS line. The current Node LTS version is 8.9.3.
+In or around January 2019 to review upgrading to the next LTS line before 8.x drops out of active LTS in April 2019.
 
-We will use Node 8.9.3.
-
-Node 8.9.3 includes bundled npm version 5.5.1. We will use the npm version bundled with Node.
+To use whichever npm version is bundled with the Node version we use.
 
 When upgrading, we will make a concerted effort to upgrade all projects as part of the same piece of work.  
 
 
 ## Consequences
 
-New projects should use Node 8.9.3 and npm 5.5.1.
+New projects should use the latest 8.x line, subject to any project-specific constraints.
 
-Existing projects should be upgraded to use 8.9.3 before April 2018 (when Active LTS ends for the 6.x line ends).
+Existing projects should be upgraded to use the 8.x line before April 2018, when Active LTS for the 6.x line ends.
 
   
