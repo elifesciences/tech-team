@@ -25,7 +25,7 @@ Staying up to date with the major and minor versions of Node is important:
 
 To use 8.x, the current Long Term Support (LTS) line.
 
-In or around January 2019 to review upgrading to the next LTS line before 8.x drops out of active LTS in April 2019.
+In or around January 2019 to review upgrading to the next LTS line before 8.x drops out of active LTS in April 2019 (see [node release schedule](https://github.com/nodejs/Release#release-schedule)).
 
 To use whichever npm version is bundled with the Node version we use.
 
