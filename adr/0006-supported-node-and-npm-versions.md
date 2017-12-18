@@ -23,7 +23,7 @@ Staying up to date with the major and minor versions of Node is important:
 
 ## Decision
 
-To use the latest Long Term Support (LTS) line (currently 8.x).
+To use 8.x, the current Long Term Support (LTS) line.
 
 In or around January 2019 to review upgrading to the next LTS line before 8.x drops out of active LTS in April 2019.
 
@@ -34,7 +34,7 @@ When upgrading, we will make a concerted effort to upgrade all projects as part 
 
 ## Consequences
 
-New projects should use the latest 8.x line, subject to any project-specific constraints.
+New projects should use the latest release in the 8.x line at the time they are started, subject to any project-specific constraints.
 
 Existing projects should be upgraded to use the 8.x line before April 2018, when Active LTS for the 6.x line ends.
 
