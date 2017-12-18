@@ -38,6 +38,6 @@ When upgrading, we will make a concerted effort to upgrade all projects as part 
 
 New projects should use Node 8.9.3 and npm 5.5.1.
 
-Exiting projects should be upgraded to use 8.9.3 before April 2018 (when Active LTS ends for the 6.x line ends).
+Existing projects should be upgraded to use 8.9.3 before April 2018 (when Active LTS ends for the 6.x line ends).
 
   
