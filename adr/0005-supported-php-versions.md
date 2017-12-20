@@ -1,6 +1,6 @@
 # Supported PHP Versions
 
-Date: 2017-12-01
+Date: 2017-12-20
 
 ## Status
 
