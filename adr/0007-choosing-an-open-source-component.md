@@ -40,12 +40,10 @@ These steps should help form a view of the likely reliability of the component.
 ### Well maintained
 
 - Are there a decent number of recent commits? This will indicate whether it's under active development. Avoid it if it's not.
-- How far back do the commits go? This will indicate how mature the library is. Take extra care to assess its reliability if it's quite immature. Immaturity may be a reason to decline to use it if there are equivalent, mature alternatives.
+- How far back do the commits go? This will indicate how mature the library is. Take extra care to assess its reliability if it's quite immature. Immaturity may be a reason to decline to use it if there is an equivalent, mature alternative.
 - What is the average lifespan of pull requests? You might want to put in a pull request yourself: is the turnaround reasonable for your needs?
 - How many people have interacted with the repo recently? A larger community is a good indication that bugs will be identified quickly, and improvements be made quicker than otherwise.  
 - How many people have merged in pull requests? A large component is more likely to be sustainable if more than one person has the ability to merge pull requests.
-
-
 
 ### Sustainable within our environment
 
