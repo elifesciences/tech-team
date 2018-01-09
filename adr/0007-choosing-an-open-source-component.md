@@ -31,6 +31,7 @@ When choosing an open source component, care should be taken to try to choose so
 ### Reliability
 
 - Check the code: are there any obvious code smells?
+- Check the documentation: is there a README with a quickstart guide to get you up and running quickly? Collectively, is the documentation sufficient?
 - Try out the code: does it behave as expected? Are there any idiosyncrasies in behaviour or usage that may indicate a design problem? A design problem may make bugs more likely, and may make it harder to fix them.  
 - Check the issues (open and closed): how many bug reports are there? How frequently are they reported?
 
