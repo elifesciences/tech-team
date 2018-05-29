@@ -39,5 +39,6 @@ Journal was (mostly) down from approx 7am to 4pm (9hrs)
 
 ## Corrective actions
 
-* builder should halt serial operations on error. We would have had 2 of 3 nodes working.
-* NewRelic should be checking the website is up and responding from a non-CDN url. preferably per-node.
+* Journal should be dockerized to ease the amount of setup on multiple servers e.g. [ELPP-3323](https://elifesciences.atlassian.net/browse/ELPP-3323)
+* builder should be used through a pipeline to do daily updates on user-facing projects like Journal: [ELPP-3663](https://elifesciences.atlassian.net/browse/ELPP-3663)
+* NewRelic should be checking the website is up and responding from a non-CDN url: [alert](https://synthetics.newrelic.com/accounts/1451451/monitors/dff9c974-d446-4057-9ea0-eee1d0ca18b6).
