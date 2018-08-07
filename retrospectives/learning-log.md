@@ -17,3 +17,4 @@ Anything that is a tenet of how we work can be recorded in an [ADR](https://gith
   - with dummy data
 - Write feature files before a deliverable is started
 - Celebrate more when a feature is done!
+- Write _deprecated_ in a repository README if it's intended to be retired, and [archive it](https://help.github.com/articles/archiving-repositories/) when it can become read only and is not deployed anywhere anymore.
