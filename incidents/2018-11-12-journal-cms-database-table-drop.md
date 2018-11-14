@@ -81,5 +81,5 @@ MTTR:
 
 - Time-limit SSH connections to production servers
 - Colourise prompts on production servers
-- Create a pipeline for journal-cms: 'contiuum test restore from prod'
+- Create a pipeline for journal-cms: 'continuum test restore from prod'
 - Delete left over indexes during a Search reindex
