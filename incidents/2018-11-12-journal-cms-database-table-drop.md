@@ -8,44 +8,44 @@ Production database manually deleted in error on Journal-CMS, intended target wa
 ## Timeline
 All times UTC.
 
-~4.50pm: Nathan realised the database was dropped from the wrong environment
+~16.50: Nathan realised the database was dropped from the wrong environment
 
-4.52pm: Nathan determined to restore the most recent database backup (from 11pm on 11th November - the previous day)
+16.52: Nathan determined to restore the most recent database backup (from 23:00 on 11th November - the previous day)
 
-4.54pm: New Relic alert for incident on journal: 'journal bypassed CDN'
+16.54: New Relic alert for incident on journal: 'journal bypassed CDN'
 
-4.56pm: Stuart notices the Magazine page carousel is missing.
+16.56: Stuart notices the Magazine page carousel is missing.
 
-4.59pm: New Relic alerts for incident on journal-cms-prod
+16.59: New Relic alerts for incident on journal-cms-prod
 
-5.05pm: Magazine carousel reported in Slack as being back
+17.05: Magazine carousel reported in Slack as being back
 
-5.07pm: Stuart confirms carousel is back
+17.07: Stuart confirms carousel is back
 
-5.18pm: email eLife staff notifying that any content added or modified today would need to be redone, and to get in touch
+17.18: email eLife staff notifying that any content added or modified today would need to be redone, and to get in touch
 
-5.20pm: Through analysing search logs, Giorgio discovered 2 blog articles had been created or modified and so needed to be addressed
+17.20: Through analysing search logs, Giorgio discovered 2 blog articles had been created or modified and so needed to be addressed
 
-5.31pm: Rowena reports Miranda is the source of the new blog post, and confirms that Rowena is the editor of the modified one & that she will reapply the edits to the latter.
+17.31: Rowena reports Miranda is the source of the new blog post, and confirms that Rowena is the editor of the modified one & that she will reapply the edits to the latter.
 
-5.37pm: Nathan submits a PR for a complete reindex
+17.37: Nathan submits a PR for a complete reindex
 
-6.17pm: reindexing gets to production, but fails due to lack of sufficient disk space
+18.17: reindexing gets to production, but fails due to lack of sufficient disk space
 
 
 2018-11-13
 
-2.52am: Luke reports he's noticed a disk space problem on search, he goes on to clear up logs to free 1Gb, but it wasn't enough
+02.52: Luke reports he's noticed a disk space problem on search, he goes on to clear up logs to free 1Gb, but it wasn't enough
 
-8.32am: Giorgio cleans up unused old indexes
+08.32: Giorgio cleans up unused old indexes
 
-8.46am: Giorgio intiates another reindex
+08.46: Giorgio intiates another reindex
 
-9.15am: reindexing completes
+09.15: reindexing completes
 
-10.57am: PR submitted for redirect from deleted version to replacement version
+10.57: PR submitted for redirect from deleted version to replacement version
 
-9.31pm: automated daily update applied journal redirect
+21.31: automated daily update applied journal redirect
 
 
 ## Contributing Factor(s)
@@ -72,8 +72,10 @@ All times UTC.
 MTTD: < 1 minute
 
 MTTR:
-    - journal cms content available again: 17 minutes
-    - full resolution: 28 hours 41 minutes
+
+- journal cms content available again: 17 minutes;
+
+- full resolution: 28 hours 41 minutes.
 
 ## Corrective Actions
 
