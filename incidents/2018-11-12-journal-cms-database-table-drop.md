@@ -69,13 +69,13 @@ All times UTC.
 
 ## Impact
 
-MTTD: < 1 minute
+MTTD: < 00:01
 
 MTTR:
 
-- journal cms content available again: 17 minutes;
+- journal cms content available again: 00:17;
 
-- full resolution: 28 hours 41 minutes.
+- full resolution: 28:41.
 
 ## Corrective Actions
 
