@@ -1,6 +1,6 @@
 # 2018-11-12
 
-** Incident Leader: Nathan Lisgo **
+**Incident Leader: Nathan Lisgo**
 
 ## Description
 Production database manually deleted in error on Journal-CMS, intended target was continuum test.
