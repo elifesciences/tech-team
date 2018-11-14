@@ -75,7 +75,7 @@ MTTR:
 
 - journal cms content available again: 00:17;
 
-- full resolution: 29:41.
+- full resolution: 28:41.
 
 ## Corrective Actions
 
