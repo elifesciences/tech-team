@@ -79,7 +79,7 @@ MTTR:
 
 ## Corrective Actions
 
-- Time-limit SSH connections to production servers
-- Colourise prompts on production servers
-- Create a pipeline for journal-cms: 'continuum test restore from prod'
-- Delete left over indexes during a Search reindex
+- [Time-limit SSH connections to production servers](https://github.com/elifesciences/issues/issues/4605)
+- [Colourise prompts on production servers](https://github.com/elifesciences/issues/issues/4606)
+- [Create a pipeline for journal-cms: 'continuum test restore from prod'](https://github.com/elifesciences/issues/issues/4607)
+- [Delete left over indexes during a Search reindex](https://github.com/elifesciences/issues/issues/4608)
