@@ -14,7 +14,8 @@ Specific details may vary from project to project. For example one project may j
 
 ## Decision
 
-Each releasable project will have a mechanism to report on its current version. A release should be pushed, if there isn't currently a tag for the corresponding version (and it's on the master branch). i.e. the version in the develop branch will contain the old version until a new release version should be pushed.
+A new release will be indicated by a new git tag.
+Jenkins will trigger on a new tag to, beyond building and running tests, also push the release out (e.g. pypi, Docker Hub, etc.).
 
 ## Consequences
 
