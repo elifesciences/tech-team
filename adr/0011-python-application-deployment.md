@@ -71,7 +71,5 @@ Adhoc and idiomatic utility scripts are replaced with a single script that encap
 Project authors will have a reproducible environment much closer to production and much less unwieldy than a 
 Vagrant virtual machine.
 
-Project releases have a reference environment that non-eLife parties can use (that doesn't require heavy dependencies like Builder and Vagrant).
-
 Project authors (hopefully) feel more agency over how their code is used in production.
 
