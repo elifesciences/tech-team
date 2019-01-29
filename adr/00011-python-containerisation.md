@@ -8,7 +8,9 @@ Proposed
 
 ## Context 
 
-Python is a mess to install and run. It would be better in all respects living within a container.
+Python and Python applications are a mess to install and run. 
+
+It would be better in all respects if we dealt with them from within a container.
 
 ## Decision
 
