@@ -1,4 +1,4 @@
-# Python application building and deployment
+# Python application building and deployment using containers
 
 Date: 2019-01-30
 
