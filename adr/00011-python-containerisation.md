@@ -8,7 +8,7 @@ Proposed
 
 ## Context 
 
-Python and Python applications are a mess to install and run. 
+Python and Python applications are complicated to install and run. 
 
 It would be better in all respects if we dealt with them from within a container.
 
