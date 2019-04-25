@@ -22,4 +22,6 @@ Jenkins will trigger on a new tag to, beyond building and running tests, also pu
 
 ## Consequences
 
-TODO
+Version numbers cannot be specified in source code, as the tag is the source of truth for them.
+
+Jenkins should not create tags automatically but wait for a human to push one as a build trigger.
