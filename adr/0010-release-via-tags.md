@@ -18,7 +18,7 @@ For any publicly available artifact it's important to specify a version that can
 
 A new release will be indicated by a new Git tag.
 
-Jenkins will trigger on a new tag to, beyond building and running tests, also push the release out (e.g. pypi, Docker Hub, etc.).
+Jenkins will trigger on a new tag to, beyond building and running tests, also push the release out (e.g. pypi, Docker Hub).
 
 ## Consequences
 
