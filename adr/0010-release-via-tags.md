@@ -1,4 +1,4 @@
-# Release Process
+# Release via tags
 
 Date: 2018-12-03
 
