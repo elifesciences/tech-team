@@ -39,7 +39,7 @@
 
 ## Stabilization Steps
 
-- restart of all affected serves through `builder`
+- restart of all affected servers through `builder`
 - [vault unseal](https://github.com/elifesciences/it-admin/blob/master/vault.md)
 - [deploy of `elife-xpub--prod`](https://alfred.elifesciences.org/job/prod-elife-xpub/)
 
