@@ -51,6 +51,7 @@ MTTR: 16m
 
 ## Corrective Actions
 
+- investigate a IAM rule to forbid turning off `prod` EC2 instances accidentally
 - monitoring of Vault status?
 - stop Salt from running (deployment, daily update) if Vault is sealed or inaccessible, for a certain set of projects/environments
 - elife-xpub status page
