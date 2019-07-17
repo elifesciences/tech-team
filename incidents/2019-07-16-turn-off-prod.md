@@ -54,5 +54,5 @@ MTTR: 16m
 - investigate a IAM rule to forbid turning off `prod` EC2 instances accidentally
 - monitoring of Vault status?
 - stop Salt from running (deployment, daily update) if Vault is sealed or inaccessible, for a certain set of projects/environments
-- elife-xpub status page
-- New Relic Synthetics monitoring of elife-xpub status page
+- [add an elife-xpub status page](https://github.com/elifesciences/elife-xpub/issues/997)
+- [New Relic Synthetics monitoring of elife-xpub status page](https://github.com/elifesciences/elife-xpub/issues/2321)
