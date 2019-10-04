@@ -10,7 +10,9 @@ See also [previous similar incident](2018-01-13-Journal-cms-full-database.md)
 
 ## Timeline
 
-2019-09-29 ~21:15 a daily Salt highstate to update the server starts to run but hangs, probably upon writing to the database
+2019-09-24 running Drupal 8.7 migration [takes much longer on prod](https://alfred.elifesciences.org/job/prod-journal-cms/368/) than on staging despite a almost identical database
+
+2019-09-29 ~21:15 a daily Salt highstate to update the server starts to run but hangs on `drush updatedb`, probably upon writing to the database
 
 13:34 @nlisgo runs a [production deployment](https://alfred.elifesciences.org/job/prod-journal-cms/373) but it fails to start because the previous update is still running
 
@@ -56,7 +58,7 @@ API calls work, cron for daily updates disabled. Last 6 hours error rate minimal
 
 16:07 database state goes from `Modifying` to `Backing up`
 
-17:13 @nlisgo runs a [production deployment](https://alfred.elifesciences.org/job/prod-journal-cms/375/console) but fails on a `/covers` unrelated error
+17:13 @nlisgo runs a [production deployment](https://alfred.elifesciences.org/job/prod-journal-cms/375/console) but fails on a `/covers` smoke test unrelated error. This was already failing before to the deploy to the best of our knowledge.
 
 2019-10-02 09:29 updating prod with Infrastructure as Code
 
@@ -66,17 +68,31 @@ API calls work, cron for daily updates disabled. Last 6 hours error rate minimal
 
 ## Contributing Factor(s)
 
-TBD
+- no monitoring on size/free space of prod databases
+- fragmentation meant staging didn't fill up like prod
+- strong dependency from `elife-xpub`
 
 ## Stabilization Steps
 
-TBD
+- restart PHP application (only a temporary fix)
+- skipping Infrastructure as Code (CloudFormation in this case) and add space with the RDS console
+- crossed our fingers
 
 ## Impact
+
+`journal` mitigated API calls with a cache, `elife-xpub` has no mitigation. `journal-cms` was down for the eLife staff.
 
 - 17:10 to 23:10 on Monday
 - 13:20 to 15:10 today
 
+MTTD: 37h
+MTTR: 4h40m
+
 ## Corrective Actions
 
-TBD
+- investigate when/where to run `../vendor/bin/drush paragraphs-revisions-purge`
+- make https://github.com/elifesciences/builder-base-formula/blob/master/elife/config/usr-local-bin-daily-system-update#L15 timeout after 1 hour, so that if it hangs an error email is sent
+- monitoring on the database space; test by filling up staging
+- monitoring on fragmentation (https://www.deciusac.com/linux-2/how-to-optimize-mysql-tables-and-defragment-to-recover-space/)
+- investigate caching layer in `elife-xpub`
+- notify product managers of necessity of status pages to be provided by Libero products
