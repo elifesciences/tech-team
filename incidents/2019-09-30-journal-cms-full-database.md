@@ -90,9 +90,9 @@ MTTR: 4h40m
 
 ## Corrective Actions
 
-- investigate when/where to run `../vendor/bin/drush paragraphs-revisions-purge`
-- make https://github.com/elifesciences/builder-base-formula/blob/master/elife/config/usr-local-bin-daily-system-update#L15 timeout after 1 hour, so that if it hangs an error email is sent
-- monitoring on the database space; test by filling up staging
-- monitoring on fragmentation (https://www.deciusac.com/linux-2/how-to-optimize-mysql-tables-and-defragment-to-recover-space/)
+- [investigate when/where to run `../vendor/bin/drush paragraphs-revisions-purge`](https://github.com/elifesciences/issues/issues/5128)
+- [make `daily-system-update` timeout after 1 hour, so that if it hangs an error email is sent](https://github.com/elifesciences/issues/issues/5129)
+- [monitoring on the database space](https://github.com/elifesciences/issues/issues/355); test by filling up staging
+  - monitoring on fragmentation (https://www.deciusac.com/linux-2/how-to-optimize-mysql-tables-and-defragment-to-recover-space/) is included in the previous issue
 - investigate caching layer in `elife-xpub`
 - notify product managers of necessity of status pages to be provided by Libero products
