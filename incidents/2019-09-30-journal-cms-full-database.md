@@ -94,5 +94,5 @@ MTTR: 4h40m
 - [make `daily-system-update` timeout after 1 hour, so that if it hangs an error email is sent](https://github.com/elifesciences/issues/issues/5129)
 - [monitoring on the database space](https://github.com/elifesciences/issues/issues/355); test by filling up staging
   - monitoring on fragmentation (https://www.deciusac.com/linux-2/how-to-optimize-mysql-tables-and-defragment-to-recover-space/) is included in the previous issue
-- investigate caching layer in `elife-xpub`
+- [investigate caching layer in `elife-xpub`](https://github.com/libero/reviewer/issues/356)
 - notify product managers of necessity of status pages to be provided by Libero products
