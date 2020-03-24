@@ -28,7 +28,9 @@ container being available and a smoke test checking for availability. This was o
 the current outage. As the containerised build is still not fit for deployment to production I made the decision to 
 merge the changes and restore the iiif--prod--* node to a working state.
 
-The changes were applied without issue about 11:45am. The APM error rate reported by NewRelic then petered out.
+The changes were applied without issue about 11:45am. The APM error rate reported by NewRelic then petered out, see:
+
+![2020-03-24--12.39.33--rpm.newrelic.com--6018f10fa699.png](./2020-03-24--12.39.33--rpm.newrelic.com--6018f10fa699.png)
 
 Juding by the nginx access logs, the period between failed highstate and restoration appears to concide with a gap in
 successful responses:
