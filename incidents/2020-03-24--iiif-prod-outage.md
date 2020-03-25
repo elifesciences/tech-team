@@ -1,8 +1,12 @@
 # iiif outage
 
+## impact
+
 * affected iiif--prod--* 
 * affected for approximately 4 hours.
 * caused by broken highstate, 16 failed states
+
+## description
 
 On Monday iiif--end2end was upgraded to switch it's installation of iiif to a container. It failed the end2end tests 
 and was left in a broken state for me to debug in the morning.
