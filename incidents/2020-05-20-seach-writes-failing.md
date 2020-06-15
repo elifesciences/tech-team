@@ -62,6 +62,6 @@ MTTR: 35h
 
 ## Corrective Actions
 
-- Was it related to [this](https://github.com/elifesciences/tech-team/pull/23/files)
-- [Investigate if log rotation needs to be enabled]()
-- [Investigate if the 7GB partition is actually enough space, do we need to increase this?]()
+- Figure out if it was it related to [this](https://github.com/elifesciences/tech-team/pull/23/files)?
+- [Investigate if log rotation needs to be enabled](https://github.com/elifesciences/issues/issues/5748)
+- [Investigate if the 7GB partition is actually enough space, do we need to increase this?](https://github.com/elifesciences/issues/issues/5749)
