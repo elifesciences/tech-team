@@ -1,10 +1,12 @@
-# 2020-05-20 Search Outage
+# 2020-05-20 Search stopped accepting writes
 
 **Incident Leader: Giorgio Sironi, Luke Skibinski**
 
 ## Description
 
-Summary of the findings of the investigation/post-mortem.
+The search service suddenly stopped accepting writes due to a full disk, and as such new content was no longer showing on the site. When a new is to be index is created, the current index is set to read only and new new index created as
+write only. Once the new index is built. The new index is updated to be read & write and the old index destroyed. In this case the disk was filled whilst the new index was built, and hence the search index was left in a state where all
+reads came from the old index, hence no new content, and all writes were failing on the new index that failed to complete.
 
 ## Timeline
 
@@ -61,6 +63,5 @@ MTTR: 35h
 ## Corrective Actions
 
 - Was it related to [this](https://github.com/elifesciences/tech-team/pull/23/files)
-- [Luke raised the following](https://github.com/elifesciences/issues/issues/5664)
 - [Investigate if log rotation needs to be enabled]()
 - [Investigate if the 7GB partition is actually enough space, do we need to increase this?]()
