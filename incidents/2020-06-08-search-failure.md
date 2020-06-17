@@ -87,6 +87,6 @@ Mean Time to Resolve (MTTR): 7h
 
 ## Corrective Actions
 
-- Figure out if it was it related to [this](https://github.com/elifesciences/tech-team/pull/23/files)?
+- [Fix the broken Jenkins project](https://github.com/elifesciences/issues/issues/5664#issuecomment-643858003)
 - [Investigate if log rotation needs to be enabled](https://github.com/elifesciences/issues/issues/5748)
 - [Investigate if the 7GB partition is actually enough space, do we need to increase this?](https://github.com/elifesciences/issues/issues/5749)
