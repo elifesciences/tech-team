@@ -4,7 +4,7 @@
 
 ## Description
 
-The search service suddenly stopped accepting writes due to a full disk, and as such new content was no longer showing on the site. When a new index is created, the current index is set to _read only_ and a new index is created as _write only_. Once the new index has built successfully, it is updated to be _read write_ and the old index destroyed. In this case the disk was filled whilst the new index was building, and hence the search index was left in a state where all reads came from the old index and all writes to the new index were failing. As such the building of the new index could never complete, and the result was new content was not visible on site.
+The manual running of a Jenkins project to build a new search index resulted in the search server running out of space [again](https://github.com/elifesciences/tech-team/blob/master/incidents/2020-05-20-search-writes-failing.md).
 
 ## Timeline
 
