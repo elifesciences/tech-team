@@ -4,9 +4,7 @@
 
 ## Description
 
-The search service suddenly stopped accepting writes due to a full disk, and as such new content was no longer showing on the site. When a new is to be index is created, the current index is set to read only and new new index created as
-write only. Once the new index is built. The new index is updated to be read & write and the old index destroyed. In this case the disk was filled whilst the new index was built, and hence the search index was left in a state where all
-reads came from the old index, hence no new content, and all writes were failing on the new index that failed to complete.
+The search service suddenly stopped accepting writes due to a full disk, and as such new content was no longer showing on the site. When a new index is created, the current index is set to _read only_ and a new index is created as _write only_. Once the new index has built successfully, it is updated to be _read write_ and the old index destroyed. In this case the disk was filled whilst the new index was building, and hence the search index was left in a state where all reads came from the old index and all writes to the new index were failing. As such the building of the new index could never complete, and the result was new content was not visible on site.
 
 ## Timeline
 
@@ -46,7 +44,7 @@ reads came from the old index, hence no new content, and all writes were failing
 ## Stabilization Steps
 
 - Marketing halted the sending of the eToc message, but 13k already sent.
-- Cleared space on full drive, by overwriting a log file.
+- Cleared space on full drive, by overwriting a log file that had grown rather large.
 
 ```
 root@prod--search:/var/log/elasticsearch# echo > elasticsearch.log
