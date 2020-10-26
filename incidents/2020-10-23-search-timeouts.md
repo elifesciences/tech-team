@@ -67,4 +67,4 @@ Mean Time to Resolve (MTTR): 0.75h
 
 ## Corrective Actions
 
-- Investigate why there are 2 instances of `search--prod`, yet `search--prod-2` didn't pick up any traffic despite the primary node having issues.
+- [Investigate why there are 2 instances of `search--prod`, yet `search--prod-2` didn't pick up any traffic despite the primary node having issues.](https://github.com/elifesciences/issues/issues/6235)
