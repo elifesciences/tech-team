@@ -4,13 +4,13 @@
 
 ## Description
 
-[Requests made to search](https://api.elifesciences.org/search?for=&page=1&per-page=10&sort=date&order=desc&type%5B%5D=research-article&use-date=default) were resulting in a timeout, which was resulting in various journal pages to fail to properly load.
+[Requests made to search](https://api.elifesciences.org/search?for=&page=1&per-page=10&sort=date&order=desc&type%5B%5D=research-article&use-date=default) were resulting in a timeout, which was resulting in various journal pages either failing to load completed, or only partially loading.
 
 ## Timeline
 
 **2020-10-23**
 
-- 14:10 New Relic raises CPU usage alert about `search--prod-1`.
+- 14:10 New Relic raises CPU usage alert about `search--prod--1`.
 
 - 15:44 Nathan reports on slack in #blue-team-techthat requests to search are timing out.
 
@@ -20,11 +20,9 @@
 
 - 15:53 Joel asks for some help from Giorgio.
 
-- 15:19 Nathan determined that a recent change may have caused the issue.
-
-- 15:45 Joel reached out to PRC team for help.
-
 - 16:04 Giorgio joins Nathan, Joel and Daniel H on a call. 
+
+- 16:14 Restart `elasticsearch`.
 
 - 16:24 Issue is resolved.
 
@@ -60,7 +58,9 @@
 
 ## Impact
 
-- New articles not appearing on the main site.
+- Search function was not working.
+- Listing on various sections of the site would fail to load, e.g specifc listing pages that weren't cached.
+- Various pages on the site would only partially load, e.g. article pages.
 
 Mean Time to Detect (MTTD): 1.5h
 Mean Time to Resolve (MTTR): 0.75h
