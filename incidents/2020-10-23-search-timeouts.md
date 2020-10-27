@@ -58,6 +58,7 @@
 
 ## Impact
 
+- Articles published during the outage not appearing on the home page or listings.
 - Search function was not working.
 - Listing on various sections of the site would fail to load, e.g specifc listing pages that weren't cached.
 - Various pages on the site would only partially load, e.g. article pages.
