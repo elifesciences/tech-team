@@ -54,6 +54,7 @@ bin/reindex prod elife_search_20201202
 - Monitored disk usage as the new index built, and cleared some additional space to ensure it completed. Recovered around 200MB of space which was just enough.
 
 ```sh
+sudo su
 rm -rf /var/log/*.gz
 apt-get clean
 ```
