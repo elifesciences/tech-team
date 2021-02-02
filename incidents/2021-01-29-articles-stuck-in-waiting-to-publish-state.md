@@ -4,7 +4,7 @@
 
 ## Description
 
-Several of the automated workflows for the production team suddenly started to fail, resulting in an in
+Several of the automated workflows for the production team suddenly started to fail, resulting in various issues the most notable of which are listed below.
 
 ## Timeline
 
@@ -22,7 +22,7 @@ Several of the automated workflows for the production team suddenly started to f
 
 - 14:20 Checked the AWS SWF dashboard, which confirmed that various workflows were timing out and the issue was indeed with the `elife-bot`.
 
-- 14:50 With Giorgio's help, it appears that the 5 worker processes have stalled. They are still running, but none are picking up any work nor outputting to their logs. Looking at the logfiles form the the previous day, we can see that they should be rather noisy and hence the empty logs are suspicious. We manually start a new worker process, and that imediately starts to process work from the queue. We then kill the 5 stalled worker processes, which then automatically respawn and things appear back to normal.
+- 14:50 With Giorgio's help, it appears that the 5 worker processes have stalled. They are still running, but none are picking up any work nor outputting to their logs. Looking at the logfiles from the the previous day, we can see that they should be rather noisy and hence the empty logs are suspicious. We manually start a new worker process, and that imediately starts to process work from the queue. We then kill the 5 stalled worker processes, which then automatically respawn and things appear back to normal.
 
 - 14:51 James from production confirms that things are working now. Hence the issue has been mitigated for now.
 
@@ -106,3 +106,5 @@ kill -9 25790
 ## Corrective Actions
 
 - [Improve handling of FTP transfer timeouts](https://github.com/elifesciences/issues/issues/5603)
+- [Investigate if we can improve monitoring to detect the issue](https://github.com/elifesciences/issues/issues/6435)
+- [Create a playbook for elife-bot](https://github.com/elifesciences/issues/issues/6437)
