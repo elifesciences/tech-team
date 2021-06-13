@@ -4,13 +4,13 @@
 
 ## Description
 
-After using builder to create an ad hoc instance of Journal, which failed, the rollback failed to recreate a DNS A record for elifesciences.org and as such nobody could access the journal using the primary address.
+After using builder to create an ad hoc instance of `journal` called `mathjax` using the `prod` configuration, which failed for unrelated reasons, the rollback destroyed resources belonging to the `journal--prod` instance and as such nobody could access the journal at `elifesciences.org`.
 
 ## Timeline
 
 **2021-06-07**
 
-- 12:03 Joel runs the builder command `./bldr launch:journal,mathjaxv3,prod` to create an ad hoc ec2 instance of journal with a production configuration. The command fails, and builder automatically performs a rollback.
+- 12:03 Joel runs the builder command `./bldr launch:journal,mathjaxv3,prod` to create an ad hoc ec2 instance of journal with a production configuration. The command fails, and the Cloudformation templates are automatically rolled back by AWS.
 
 - 12:09 Suspicious from output from the failure, Joel checks and notices that accessing `elifesciences.org` is no longer working, however accessing `https://prod--journal.elifesciences.org/` still works. Clearly there was a connection with the command I'd try to run, and the outage. Joel starts a [new thread](https://elifesciences.slack.com/archives/C6N559E2F/p1623064161001500) in the #incident-response Slack channel asking for some help from Giorgio.
 
@@ -52,7 +52,7 @@ After using builder to create an ad hoc instance of Journal, which failed, the r
 
 ## Stabilization Steps
 
-- Tried to use builder to restore the correct state, this failed as it thought everything was up-to-date but it was the correct thing to try.
+- Tried to use builder to restore the correct state, this failed as it thought everything was up-to-date but it _was_ the correct thing to try.
 
 ```
 ./bldr update_infrastructure:journal--prod
@@ -62,8 +62,11 @@ After using builder to create an ad hoc instance of Journal, which failed, the r
 
 ## Impact
 
-- Unable to access the journal via the `elifesciences.org` address.
+- Unable to access the journal via the `elifesciences.org` address for approximately 1hr, 9mins.
 
 ## Corrective Actions
 
 - [Investigate why elifesciences.org dns record was deleted](https://github.com/elifesciences/issues/issues/6713)
+- [builder, mark snowflake configurations as such](https://github.com/elifesciences/issues/issues/6721)
+- [builder, preview template changes on create](https://github.com/elifesciences/issues/issues/6722)
+- [builder, force update_infrastructure](https://github.com/elifesciences/issues/issues/6723)
