@@ -39,7 +39,7 @@ UTC/ACDT
 * error was expected so I ignored it
 * I check the CPU Credits on the other nodes, all very high
     - I suspect the load balancer is routing all traffic to a single node
-* I check the ALB Target Group and only one node is attached
+* I check the ALB Target Group via the console and only one node is attached
     - the one I just stopped and started.
 * I use the console to add nodes 1 and 3 back into the target group
     - the command I just ran should have done this, but if it didn't I have no time to debug why
@@ -71,13 +71,17 @@ During a blue-green deployment, the project's nodes are split into two groups an
 
 The nodes are removed from the load balancer so they don't receive traffic while updating and then updated in parallel.
 
-Something happened during the upload of the bootstrap script on one of the nodes that isn't clear and it exited with a return code of 1. The other node completed it's update successfully.
+Something happened during the upload of the bootstrap script on one of the nodes that isn't clear and it exited with a 
+return code of 1. The other node completed it's update successfully.
 
-This failure meant that the second group was not updated and left alone, presumably until the problem in the first group was rectified.
+This failure meant that the second group was not updated and left alone, presumably until the problem in the first group 
+was rectified.
 
-As there are only three nodes in the journal--prod group, we had a group of 2 nodes and a group of 1 nodes and the 2-node group was deregistered first leaving a single node to handle traffic for half of friday, the weekend and half of monday.
+As there are only three nodes in the journal--prod group, we had a group of 2 nodes and a group of 1 nodes and the 2-node 
+group was deregistered first leaving a single node to handle traffic for half of friday, the weekend and half of monday.
 
-The corrective action of adding the nodes back into the load balancer meant that the journal was operating with software in an inconsistent state.
+The corrective action of adding the nodes back into the load balancer meant that the journal was operating with software 
+in an inconsistent state.
 
 node 1: failed to update, in the same state as node 2
 node 3: successfully updated, running a different version of the journal to nodes 1 and 2.
@@ -88,9 +92,9 @@ A better solution to this incident would have been:
     - nodes would be in an inconsistent state but this is better than not serving traffic.
 2. run the [prod-journal](https://alfred.elifesciences.org/job/prod-journal/) pipeline in Jenkins once the CPU Credits and NewRelic Apdex had improved.
     - this would have run the 'Deploy to prod' step that would do the blue-green deployment again.
-    - the `build_vars` on each of the nodes would have been made consistent so that highstate would bring them all into the same state
+    - the `build_vars` on each of the nodes would have been made consistent and highstate would have made the rest of the system consistent. 
 
 ## corrective actions
 
 - [x] create a NewRelic alert for journal nodes that become suspiciously idle for a period of time
-- [ ] increase the number of journal nodes from 3 to 4 so that blue-green partitioning never leaves a group of 1 to cope with all traffic.
+- [x] increase the number of journal nodes from 3 to 4 so that blue-green partitioning never leaves a group of 1 to cope with all traffic.
