@@ -1,0 +1,23 @@
+{
+  "name": "tech-team",
+  "version": "1.0.0",
+  "description": "Everything about the tech team, from team-wide [ADR](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions) that do not fit into single projects, to incident post-mortems.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elifesciences/tech-team.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elifesciences/tech-team/issues"
+  },
+  "homepage": "https://github.com/elifesciences/tech-team#readme",
+  "devDependencies": {
+    "@octokit/core": "^3.2.5"
+  }
+}
