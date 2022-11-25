@@ -62,8 +62,9 @@ Not all expected logs were output so we had something to compare after restart.
 
 ## Corrective Actions
 
-- add ability to alert appropriate team members if new content is not available on search. Would be great not to rely on a team member spotting the issue
+- add ability to alert appropriate team members if new content is not available on search. Would be great not to rely on a team member spotting the issue.
 - consider removing the reliance on gearman as we are not currently benefitting from the presence of the service. The alternative is to index items as soon as we retrieve them from the queue.
-- implement a check on full search reindex to ensure that write index has some items in place before switch the read index flag.
+- implement a check on full search reindex to ensure that write index has some items in place before switch the read index flag. (https://github.com/elifesciences/issues/issues/7896)
+- add dateFrom filter to search import command. (https://github.com/elifesciences/issues/issues/7942)
 - consider the possibility of having a health check that we run hourly which checks that we can successfully index a single item and if we can't alerts an appropriate team member.
 - as part of postgres upgrade process also restart the server and verify that a single item can queued and indexed successfully.
