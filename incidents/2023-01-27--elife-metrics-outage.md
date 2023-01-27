@@ -2,7 +2,7 @@
 
 ## Description
 
-For ~13.5hrs 2023-01-26 `elife-metrics--prod` was unreachable.
+For ~13.5hrs over 2023-01-26 - 2023-01-27, `elife-metrics--prod` was unreachable.
 
 The cause was a "degradation of the underlying hardware hosting" the ec2 instance.
 
