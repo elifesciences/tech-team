@@ -38,10 +38,8 @@ Dates and times are in ACDT (+10:30)
 
 * `elife-metrics--prod` was unavailable for ~13.5 hrs.
 * no metrics data displayed on journal.
-* ...
 
 ## Corrective Actions
 
 * a load-balanced/redundant ec2 instance in a separate AZ would allow the service to continue running despite human availability to fix individual node problems.
-* ...
 
