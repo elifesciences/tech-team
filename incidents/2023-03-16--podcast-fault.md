@@ -21,23 +21,25 @@ As a consequence of the Drupal 9 upgrade of Journal CMS the podcast pages were t
 * 14:35: raises PR for interim fix to avoid read from field_chapter_time (https://github.com/elifesciences/journal-cms/pull/838)
 * 14:54: merges in above PR
 * : Resolves unrelated issue with end2end clean Journal CMS workflow
-* 16:04: above fix deployed to prod
+* 16:04: above fix deployed to prod, pages no longer erroring but chapter times all reading as 0
 * 17:09: PR raised to allow us to read from field_chapter_time (https://github.com/elifesciences/journal-cms/pull/840)
 * 21:03: Above fix deployed to prod, previous automated deployment failed in "Project tests" for intermittent failure
 * : error still shown with field_chapter_time, planned work to create new field and migrate data and switch read
 
 2023-03-17
 
-* Switched to new field, successfully migrating the data
+* Switched to new field, successfully migrating the data and removed old field
 
 ## Contributing Factors
 
-* 
+* Scheduled release window for Drupal 9, requiring staff to avoid adding/modifying content
+* Last minute annual because of teacher strike
+* Major update to Drupal
 
 ## Stabilization Steps
 
 * avoid reading from problem field
-* fix issue with end2end Journal CMS recovery
+* fix issue with end2end Journal CMS recovery to clear deployment pipeline
 * refactor code to successfully read from problem field
 * create new field, migrate data and delete problem field
 
@@ -49,4 +51,6 @@ As a consequence of the Drupal 9 upgrade of Journal CMS the podcast pages were t
 
 ## Corrective Actions
 
-* 
+* Possibly should have rescheduled release window
+* Focus more attention on integral endpoints rather than application in isolation
+* Implement ping strategy on major pages/endpoints to detect health of applications on a regular frequency (ignored for analytics)
