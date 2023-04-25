@@ -26,6 +26,9 @@ As a consequence of a DataHub update removing an API endpoint, The enhanced prep
 - 16:09: Scott's PR is merged into master branch
 - **16:10: The data-hub-api version is rolled back**
 - 16:21: The wider team is notified that reviewed preprints have returned
+- 17:18: The EPP server is reverted to synchronise the EPP server and client fixes
+
+2023-04-26
 
 ## Contributing Factors
 
