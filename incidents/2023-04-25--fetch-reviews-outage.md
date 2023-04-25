@@ -20,7 +20,7 @@ As a consequence of a DataHub update removing an API endpoint, The enhanced prep
 2023-04-25
 
 - 15:20: The flux cluster is updated with a new version of data-hub-api
-- (time): Fred notifies Nathan that certain preprints are not working
+- 15:31: Fred notifies Nathan that certain preprints are not working
 - 15:45: Scott raises a [PR in EPP Server](https://github.com/elifesciences/enhanced-preprints-server/pull/675) to address the data-hub-api update
 - 15:56: Elliot raises a [PR in EPP Client](https://github.com/elifesciences/enhanced-preprints-client/pull/621) to remove versions from the reviews request
 - 16:09: Scott's PR is merged into master branch
