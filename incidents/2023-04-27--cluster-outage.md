@@ -16,7 +16,7 @@ The cluster nodes hit a disk space limit, preventing the latest release of EPP c
 ## Contributing Factors
 
 - Not enough disk space in the cluster
-- Build images are unnessessarily large
+- Build images are unnecessarily large
 
 ## Stabilization Steps
 
