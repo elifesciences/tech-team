@@ -22,7 +22,7 @@ Users were unable to access Reviewed Preprints pages on December 10th due to per
 * 10:00: The team confirms the issue is with the server application. Aisha begins reviewing recent commits to identify possible causes.
 * 10:05: Aisha reverts a renovate commit (`fix(deps): update dependency @smithy/util-stream to v3.3.2`) merged at 10:46 PM on December 9th to rule out its involvement. This does not resolve the issue.
 * 10:11: Ash provides an update in Slack: "Aisha has locally reverted a server utility function commit, but the error persists."
-* 10:50: The team identifies that the 500 errors are caused by a request made to the Metrics API, which fails to handle non-standard response codes (e.g., 2xx, 404).
+* 10:50?: The team identifies that the 500 errors are caused by a request made to the Metrics API, which fails to handle non-standard response codes (e.g., 2xx, 404).
 * 10:53: Ash updates the team: "We've identified a Metrics API upgrade completed yesterday may be the root cause. We are working to resolve the issue and ensure such upgrades don’t cause the same impact in the future."
 * 11:00: A fix is committed to the server application to log errors from Metrics API requests instead of throwing them: [Commit: 4dad1f1](https://github.com/elifesciences/enhanced-preprints-server/commit/4dad1f10622070fbefa6b42a3c4bca3dbdeac115).
 * 11:17: The fix is deployed to staging, resolving the 500 errors. Reviewed Preprints pages are visible again without metrics data.
