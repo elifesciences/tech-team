@@ -61,7 +61,7 @@ Users were unable to access Reviewed Preprints pages on December 10th due to per
 * ? Better handling of third party requests in application (Scott)
 * ? Incident frequency - value in recording and surfacing metrics (Ash)
 * Address clone db script failing (https://github.com/elifesciences/enhanced-preprints-issues/issues/1226)
-* ? Documentation/tooling - to assist debugging and response - playbook (Will/Aisha)
+* ? Documentation/tooling - to assist debugging and response - playbook, dependency map (Will/Aisha)
 * ? testing for resilience (Nathan)
 * ? Fake drills (Scott/Paul)
 * Schedule 2 hours for future post-mortems
