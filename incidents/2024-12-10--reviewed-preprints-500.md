@@ -54,14 +54,14 @@ Users were unable to access Reviewed Preprints pages on December 10th due to per
 
 *Once you have finished with the action then remove your name from the bullet point.*
 
-* Turn on fastly for EPP/Journal on reviewed preprints (Nathan)
+* Turn on fastly for EPP/Journal on reviewed preprints (https://github.com/elifesciences/enhanced-preprints-issues/issues/1228)
 * ? More descriptive logs (agree on framework for logs) (Hazal)
-* Better monitoring of services (Will/Scott)
+* ? Better monitoring of services (Will/Scott)
 * ? Google meet chat is lost after incident (Aisha)
 * ? Better handling of third party requests in application (Scott)
 * ? Incident frequency - value in recording and surfacing metrics (Ash)
-* ? Address clone db script failing (Nathan)
-* ? Documentation/tooling - to assist debugging and response - playbook, check status of all services and a network of dependencies (Will/Aisha)
-* ? testing for resilience (Hazal)
+* Address clone db script failing (https://github.com/elifesciences/enhanced-preprints-issues/issues/1226)
+* ? Documentation/tooling - to assist debugging and response - playbook (Will/Aisha)
+* ? testing for resilience (Nathan)
 * ? Fake drills (Scott/Paul)
-* ? Longer post-mortems (All - 2 hours)
+* Schedule 2 hours for future post-mortems
