@@ -1,6 +1,6 @@
 # 2024-12-10 - Reviewed Preprints 500 Error
 
-**Incident Leader: [Your Name Here]**
+**Incident Leader: Nathan Lisgo**
 
 ## Description
 
