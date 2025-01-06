@@ -56,7 +56,7 @@ Users were unable to access Reviewed Preprints pages on December 10th due to per
 
 * Turn on fastly for EPP/Journal on reviewed preprints (https://github.com/elifesciences/enhanced-preprints-issues/issues/1228)
 * ? More descriptive logs (agree on framework for logs) (Hazal)
-* ? Better monitoring of services (Will/Scott)
+* Better monitoring of services (https://github.com/elifesciences/enhanced-preprints-issues/issues/1230)
 * ? Google meet chat is lost after incident (Aisha)
 * ? Better handling of third party requests in application (Scott)
 * ? Incident frequency - value in recording and surfacing metrics (Ash)
